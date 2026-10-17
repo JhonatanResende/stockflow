@@ -1,2 +1,14 @@
-backend/node_modules/
+# Ambiente virtual Python
+backend/venv/
+backend/.venv/
+
+# Variáveis de ambiente
 backend/.env
+
+# Arquivos compilados Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node (caso ainda exista)
+backend/node_modules/
