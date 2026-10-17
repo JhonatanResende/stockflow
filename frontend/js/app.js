@@ -59,7 +59,7 @@ async function carregarProdutos() {
                 <td colspan="7" class="text-center text-danger py-4">
                     <i class="bi bi-exclamation-triangle fs-3 d-block mb-2"></i>
                     <strong>Não foi possível conectar ao servidor.</strong><br>
-                    <small>Verifique se o Node.js está rodando na porta 3001.</small>
+                    <small>Verifique se o servidor está rodando na porta 8000.</small>
                 </td>
             </tr>
         `;
