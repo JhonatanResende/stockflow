@@ -20,8 +20,7 @@ Sistema full stack para gerenciamento de produtos desenvolvido com Python, FastA
 - python-dotenv
 
 ### Banco de dados
-- PostgreSQL
-- Supabase
+- PostgreSQL (hospedado no Supabase)
 
 ---
 
@@ -108,16 +107,16 @@ pip install -r requirements.txt
 Crie um arquivo `.env` dentro da pasta `backend` baseado no `.env.example`:
 
 ```env
-DB_HOST=localhost
-DB_USER=postgres
+DB_HOST=aws-0-sa-east-1.pooler.supabase.com
+DB_USER=postgres.seu_usuario_supabase
 DB_PASSWORD=sua_senha
-DB_NAME=sistema_estoque
+DB_NAME=postgres
 DB_PORT=5432
 ```
 
 ### 6. Configure o banco de dados
 
-No pgAdmin ou Supabase, execute:
+No Supabase, acesse o **SQL Editor** e execute:
 
 ```sql
 CREATE TABLE produtos (
