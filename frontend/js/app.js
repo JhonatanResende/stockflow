@@ -2,7 +2,7 @@
 // CONFIGURAÇÃO
 // ==================================
 
-const API_URL = 'http://localhost:8000/api';
+const API_URL = 'https://stockflow-api-uo5d.onrender.com/api';
 
 // ==================================
 // INICIALIZAÇÃO
