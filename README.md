@@ -1,6 +1,6 @@
-# 📦 Sistema de Estoque Full Stack
+# 📦 StockFlow — Controle de Estoque Full Stack
 
-Sistema full stack para gerenciamento de produtos desenvolvido com Node.js, Express, PostgreSQL e JavaScript.
+Sistema full stack para gerenciamento de produtos desenvolvido com Python, FastAPI, PostgreSQL e JavaScript.
 
 ---
 
@@ -14,14 +14,14 @@ Sistema full stack para gerenciamento de produtos desenvolvido com Node.js, Expr
 - Bootstrap Icons
 
 ### Back-end
-- Node.js
-- Express.js
-- dotenv
-- CORS
+- Python
+- FastAPI
+- Uvicorn
+- python-dotenv
 
 ### Banco de dados
 - PostgreSQL
-- pgAdmin
+- Supabase
 
 ---
 
@@ -50,14 +50,14 @@ Sistema full stack para gerenciamento de produtos desenvolvido com Node.js, Expr
 ## 📁 Estrutura do projeto
 
 ```text
-sistema-estoque/
+stockflow/
 │
 ├── backend/
-│   ├── index.js
-│   ├── routes.js
-│   ├── database.js
-│   ├── .env.example
-│   └── package.json
+│   ├── main.py
+│   ├── routes.py
+│   ├── database.py
+│   ├── requirements.txt
+│   └── .env.example
 │
 ├── frontend/
 │   ├── index.html
@@ -76,7 +76,7 @@ sistema-estoque/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/JhonatanResende/sistema-de-estoque.git
+git clone https://github.com/JhonatanResende/stockflow.git
 ```
 
 ### 2. Entre na pasta backend
@@ -85,13 +85,25 @@ git clone https://github.com/JhonatanResende/sistema-de-estoque.git
 cd backend
 ```
 
-### 3. Instale as dependências
+### 3. Crie e ative o ambiente virtual
 
 ```bash
-npm install
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# Linux/Mac
+source venv/bin/activate
 ```
 
-### 4. Configure o arquivo `.env`
+### 4. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Configure o arquivo `.env`
 
 Crie um arquivo `.env` dentro da pasta `backend` baseado no `.env.example`:
 
@@ -103,9 +115,9 @@ DB_NAME=sistema_estoque
 DB_PORT=5432
 ```
 
-### 5. Configure o banco de dados
+### 6. Configure o banco de dados
 
-No pgAdmin, crie o banco `sistema_estoque` e execute:
+No pgAdmin ou Supabase, execute:
 
 ```sql
 CREATE TABLE produtos (
@@ -118,15 +130,15 @@ CREATE TABLE produtos (
 );
 ```
 
-### 6. Rode o servidor
+### 7. Rode o servidor
 
 ```bash
-node index.js
+uvicorn main:app --reload
 ```
 
-Servidor rodando em `http://localhost:3001`
+Servidor rodando em `http://localhost:8000`
 
-### 7. Abra o front-end
+### 8. Abra o front-end
 
 Abra o arquivo `frontend/index.html` no navegador ou use a extensão Live Server do VS Code.
 
@@ -152,20 +164,20 @@ Este projeto utiliza variáveis de ambiente com `.env`. O arquivo `.env` não de
 
 ## 🛠️ Dependências principais
 
-- express
-- pg
-- cors
-- body-parser
-- dotenv
+- fastapi
+- uvicorn
+- psycopg2-binary
+- python-dotenv
 
 ---
 
 ## 🌐 Deploy
 
-- **Sistema:** https://sistema-estoque-pi-swart.vercel.app
-- **API:** https://sistema-de-estoque-gpkb.onrender.com
+- **Sistema:** https://stockflow.vercel.app
+- **API:** https://stockflow-api-uo5d.onrender.com
 
 ---
 
 ## 👨‍💻 Autor
+
 Desenvolvido por Jhonatan Resende 🚀
