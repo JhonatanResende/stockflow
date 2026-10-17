@@ -173,7 +173,7 @@ Este projeto utiliza variáveis de ambiente com `.env`. O arquivo `.env` não de
 
 ## 🌐 Deploy
 
-- **Sistema:** https://stockflow.vercel.app
+- **Sistema:** https://stockflow-jhonatan24.vercel.app/
 - **API:** https://stockflow-api-uo5d.onrender.com
 
 ---
