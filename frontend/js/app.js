@@ -103,14 +103,14 @@ function exibirProdutos(produtos) {
                 <!-- O id real (produto.id) continua sendo usado nos botões de editar/deletar -->
                 <td><span class="text-muted">${indice + 1}</span></td>
                 <td><strong>${escapeHtml(produto.nome)}</strong></td>
-                <td>${escapeHtml(produto.descricao || '-')}</td>
+                <td class="d-none d-md-table-cell">${escapeHtml(produto.descricao || '-')}</td>
                 <td>
                     <span class="badge ${badgeClass}">
                         ${produto.quantidade} un.
                     </span>
                 </td>
                 <td><strong>${formatarMoeda(produto.preco)}</strong></td>
-                <td><small class="text-muted">${formatarData(produto.data_cadastro)}</small></td>
+                <td class="d-none d-md-table-cell"><small class="text-muted">${formatarData(produto.data_cadastro)}</small></td>
                 <td class="text-center">
                     <button class="btn btn-sm btn-warning me-1"
                             onclick="editarProduto(${produto.id})"
