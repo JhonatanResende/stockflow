@@ -6,14 +6,14 @@ Sistema full stack para gerenciamento de produtos desenvolvido com Python, FastA
 
 ## 🚀 Tecnologias utilizadas
 
-### Front-end
+### Frontend
 - HTML5
 - CSS3
 - JavaScript
 - Bootstrap
 - Bootstrap Icons
 
-### Back-end
+### Backend
 - Python
 - FastAPI
 - Uvicorn
@@ -137,7 +137,7 @@ uvicorn main:app --reload
 
 Servidor rodando em `http://localhost:8000`
 
-### 8. Abra o front-end
+### 8. Abra o frontend
 
 Abra o arquivo `frontend/index.html` no navegador ou use a extensão Live Server do VS Code.
 
