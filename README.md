@@ -1,6 +1,6 @@
-# 📦 StockFlow — Controle de Estoque Full Stack
+# 📦 StockFlow — Controle de Estoque Fullstack
 
-Sistema full stack para gerenciamento de produtos desenvolvido com Python, FastAPI, PostgreSQL e JavaScript.
+Sistema fullstack para gerenciamento de produtos desenvolvido com Python, FastAPI, PostgreSQL e JavaScript.
 
 ---
 
@@ -36,7 +36,7 @@ Sistema full stack para gerenciamento de produtos desenvolvido com Python, FastA
 - ✅ Integração com PostgreSQL
 - ✅ Sistema responsivo
 - ✅ Toasts de notificação
-- ✅ Integração Front-end + Back-end
+- ✅ Integração Frontend + Backend
 
 ---
 
